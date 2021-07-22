@@ -14,4 +14,10 @@ public struct Person:Codable {
     public var name:String = ""
     public var patronymic:String = ""
     public var gender:Gender = .male
+    public init(surname:String,name:String,patronymic:String, gender:Gender){
+        self.surname = surname
+        self.name = name
+        self.patronymic = patronymic
+        self.gender = gender
+    }
 }
