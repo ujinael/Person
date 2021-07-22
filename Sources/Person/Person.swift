@@ -5,13 +5,13 @@
 //  Created by Evgeny on 22.07.2021.
 //
 import Foundation
-enum Gender:String,Codable {
+public enum Gender:String,Codable {
     case male = "мужчина"
     case female = "женщина"
 }
-struct Person:Codable {
-    var surname:String = ""
-      var name:String = ""
-       var patronymic:String = ""
-    var gender:Gender = .male
+public struct Person:Codable {
+    public var surname:String = ""
+    public var name:String = ""
+    public var patronymic:String = ""
+    public var gender:Gender = .male
 }

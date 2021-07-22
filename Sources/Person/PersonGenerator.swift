@@ -5,7 +5,7 @@
 //  Created by Evgeny on 22.07.2021.
 //
 import Foundation
-class PersonGenerator {
+public class PersonGenerator {
     private static let genders = [Gender.male, Gender.female]
 private static let maleNames = ["Иван","Петр","Дмитрий","Александр","Владимир","Николай"]
     private static let femaleNames = ["Александра","Ирина","Кристина","Ольга","Анна","Катерина"]
@@ -14,7 +14,7 @@ private static let maleNames = ["Иван","Петр","Дмитрий","Алек
     private static let malePatronimyc = ["Иванович","Петрович","Дмитриевич","Александрович","Владимирович","Николаевич"]
     private static let femalePatronimyc = ["Ивановна","Петровна","Дмитриевна","Александровна","Владимировна","Николаевна"]
 
-    static func person()->Person{
+    public static func person()->Person{
         var person:Person = Person()
         person.gender = genders[Int.random(in: 0..<1)]
         switch person.gender {
