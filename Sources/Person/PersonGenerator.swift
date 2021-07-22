@@ -16,16 +16,16 @@ private static let maleNames = ["Иван","Петр","Дмитрий","Алек
 
     public static func person()->Person{
         var person:Person = Person()
-        person.gender = genders[Int.random(in: 0..<1)]
+        person.gender = genders[Int.random(in: 0..<2)]
         switch person.gender {
             case .male:
-                person.name = maleNames[Int.random(in: 0..<maleNames.count-1)]
-                person.surname = maleSurnames[Int.random(in: 0..<maleSurnames.count-1)]
-                person.patronymic = malePatronimyc[Int.random(in: 0..<malePatronimyc.count-1)]
+                person.name = maleNames[Int.random(in: 0..<maleNames.count)]
+                person.surname = maleSurnames[Int.random(in: 0..<maleSurnames.count)]
+                person.patronymic = malePatronimyc[Int.random(in: 0..<malePatronimyc.count)]
             case .female:
-                person.name = femaleNames[Int.random(in: 0..<femaleNames.count-1)]
-                person.surname = femaleSurnames[Int.random(in: 0..<femaleSurnames.count-1)]
-                person.patronymic = femalePatronimyc[Int.random(in: 0..<femalePatronimyc.count-1)]
+                person.name = femaleNames[Int.random(in: 0..<femaleNames.count)]
+                person.surname = femaleSurnames[Int.random(in: 0..<femaleSurnames.count)]
+                person.patronymic = femalePatronimyc[Int.random(in: 0..<femalePatronimyc.count)]
         }
 return person
     }
