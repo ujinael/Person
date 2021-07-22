@@ -20,4 +20,8 @@ public struct Person:Codable {
         self.patronymic = patronymic
         self.gender = gender
     }
+    public init(){
+
+        
+    }
 }
