@@ -1,4 +1,4 @@
 # Person
 
-A description of this package.
+Простой генератор пользователей для vapor v4 swift
 # Person
